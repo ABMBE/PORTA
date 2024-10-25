@@ -16,7 +16,7 @@ export default function Home() {
             </ul>
           </nav>
         </div>
-        <div>
+        <div className={styles.intro}>
           <h1>Hi I'm</h1>
           <h1>Sebastian Medina</h1>
           <p>Soy Ingeniero de Sistemas y Administrador de red</p>
