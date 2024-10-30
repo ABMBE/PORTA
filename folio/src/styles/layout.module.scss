@@ -3,13 +3,13 @@
 
 
 
-.intro {
-    @include gripcontainer;
+.gen {
+    padding: 20px;
 }
 
 .nav {
-    padding: 8px;
     font-size: $font-size-h3;
+    background-color: red;
     
     .navlist {
     @include flex (row);
@@ -21,4 +21,29 @@
             padding: 15px;
         }
     }
+}
+
+.main {
+    @include flex (column);
+    background-color: rgb(9, 85, 85);
+    height: 100vh;
+    padding: 15px;
+}
+
+.div1 {
+    //padding-left: 400px;
+    //padding-right: 400px;
+    //padding: 50px;
+    //background-color: green;
+    //height: 100vh;
+    .title{
+        font-size: $font-size-h1;
+    }
+}
+
+.footer { 
+    background-color: red; 
+    color: white; padding: 20px; 
+    text-align: center; 
+    margin-top: auto; // Empuja el footer al final del contenedor
 }

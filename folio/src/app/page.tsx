@@ -4,7 +4,7 @@ import { hrtime } from "process";
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.gen}>
       <main>
         <div>
           <nav className={styles.nav}>
@@ -16,17 +16,18 @@ export default function Home() {
             </ul>
           </nav>
         </div>
-        <div className={styles.intro}>
-          <h1>Hi I'm</h1>
-          <h1>Sebastian Medina</h1>
-          <p>Soy Ingeniero de Sistemas y Administrador de red</p>
-        </div>
-        <div>
-          <button>DOWNLOAD CV</button>
-          <a href="https://github.com/ABMBE"><img src="C:\Users\zeus_\Downloads\github.png" alt="github" /></a>
+        <div className={styles.main}>
+          <div className={styles.div1}>
+            <h1 className={styles.title}>Sebastian Medina</h1>
+            <p>Soy Ingeniero de Sistemas y Administrador de red</p>
+          </div>
+            <div className={styles.div2}>
+            <button>DOWNLOAD CV</button>
+            <a href="https://github.com/ABMBE"><img src="C:\Users\zeus_\Downloads\github.png" alt="github" /></a>
+          </div>
         </div>
       </main>
-      <footer>
+      <footer className={styles.footer}>
         <p>&copy; 2024 Sebastian Medina</p>
       </footer>
     </div>
