@@ -2,48 +2,39 @@
 @import "../styles/variables.scss";
 
 
-
-.gen {
-    padding: 20px;
-}
-
-.nav {
-    font-size: $font-size-h3;
-    background-color: red;
-    
-    .navlist {
+.body {
     @include flex (row);
-    justify-content: flex-end;
-    padding: 0;
+    background-color: $backcolor;
+    justify-content: center;
     margin: 0;
-
-        .navitem {
-            padding: 15px;
-        }
-    }
+    padding: 50px;  
+    font-family: var(--secondary-font);
 }
 
-.main {
-    @include flex (column);
-    background-color: rgb(9, 85, 85);
+.head {
+    @include flex(row);
+    align-items: center;
+    padding: 35px;
+    width: 50%; 
     height: 100vh;
-    padding: 15px;
-}
-
-.div1 {
-    //padding-left: 400px;
-    //padding-right: 400px;
-    //padding: 50px;
-    //background-color: green;
-    //height: 100vh;
-    .title{
+    //background-color: black;
+    
+    h1{
         font-size: $font-size-h1;
+        font-display: bold;
+    }
+    h2{
+        font-size: $font-size-h2;
     }
 }
 
-.footer { 
-    background-color: red; 
-    color: white; padding: 20px; 
-    text-align: center; 
-    margin-top: auto; // Empuja el footer al final del contenedor
+.container {
+    @include flex (row);
+    align-items: center;
+    //background-color: red;
+    width: 50%;
+    padding: 35px;
 }
+
+
+

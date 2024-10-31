@@ -4,32 +4,49 @@ import { hrtime } from "process";
 
 export default function Home() {
   return (
-    <div className={styles.gen}>
-      <main>
-        <div>
-          <nav className={styles.nav}>
-            <ul className={styles.navlist}>
-              <li className={styles.navitem}><a href="/">Home</a></li>
-              <li className={styles.navitem}><a href="/about">About</a></li>
-              <li className={styles.navitem}><a href="/services">Services</a></li>
-              <li className={styles.navitem}><a href="/contact">Contact</a></li>
+    <div>
+      <div>
+        <div className={styles.body}>
+          <header className={styles.head}>
+            <div>
+              <h1>Sebastian Medina</h1>
+              <h2>Ingeniero de Sistemas</h2>
+              <p>Estudiante de ingenieria de sistemas y Administrador de Red</p>
+              <nav>
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about">About</a></li>
+                  <li><a href="/services">Services</a></li>
+                  <li><a href="/contact">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <ul>
+              <li><a href="https://github.com/tu-usuario" target="_blank"></a></li> 
+              <li><a href="https://linkedin.com/in/tu-usuario" target="_blank"></a></li> 
+              <li><a href="https://codepen.io/tu-usuario" target="_blank"></a></li> 
+              <li><a href="https://twitter.com/tu-usuario" target="_blank"></a></li> 
+              <li><a href="https://www.goodreads.com/tu-usuario" target="_blank"></a></li> 
             </ul>
-          </nav>
+          </header>
+          <main className={styles.container}>
+            <div>
+              <section>
+                <p>ME GUSTA PROGRAMAR PAGINAS WEB</p>
+              </section>
+              <section>
+                <p>INSTALCION DE FIBRA OPTICA</p>
+              </section>
+              <section>
+                <p>ETC</p>
+                </section> 
+              </div> 
+            <footer>
+              
+            </footer>
+          </main>
         </div>
-        <div className={styles.main}>
-          <div className={styles.div1}>
-            <h1 className={styles.title}>Sebastian Medina</h1>
-            <p>Soy Ingeniero de Sistemas y Administrador de red</p>
-          </div>
-            <div className={styles.div2}>
-            <button>DOWNLOAD CV</button>
-            <a href="https://github.com/ABMBE"><img src="C:\Users\zeus_\Downloads\github.png" alt="github" /></a>
-          </div>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <p>&copy; 2024 Sebastian Medina</p>
-      </footer>
+      </div>
     </div>
   );
 }
