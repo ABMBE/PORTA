@@ -14,26 +14,49 @@
 .head {
     @include flex(row);
     align-items: center;
-    padding: 35px;
+    justify-content: center;
+    padding: 30px;
     width: 50%; 
     height: 100vh;
+    font-weight: lighter;
     //background-color: black;
     
     h1{
         font-size: $font-size-h1;
-        font-display: bold;
     }
+    
     h2{
         font-size: $font-size-h2;
+    }
+}
+
+.first{
+    @include flex (column);
+    gap: 4rem;
+
+    nav ul{
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li{
+        text-decoration: none;
+        color:rgb(104, 175, 151);
     }
 }
 
 .container {
     @include flex (row);
     align-items: center;
-    //background-color: red;
+    justify-content: center;
     width: 50%;
-    padding: 35px;
+    padding: 30px;
+
+    section div {
+        @include flex (column);
+        gap: 2rem;
+        text-align: justify;
+    }
 }
 
 
