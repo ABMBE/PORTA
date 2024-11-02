@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 :root {
-  --background: #1c1b22;
+  --background: rgb(15, 23, 42);
   --foreground: #ffff;
   --primary-font: 'Monospace', sans-serif;
   --secondary-font: 'Verdana';
@@ -11,7 +11,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1c1b22;
+    --background: rgb(15, 23, 42);
     --foreground: #ededed;
   }
 }

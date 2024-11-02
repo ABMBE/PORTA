@@ -1,0 +1,36 @@
+@import "../styles/mixins.module.scss";
+
+// Variables
+$primary-color: #02070a;
+$border-radius: 8px;
+// Mixins
+//@mixin button-style($bg-color) {
+    //background-color: $bg-color;
+    //color: #fff;
+    //padding: 10px 20px;
+    //margin: 1.5rem 0rem;
+    //border: none;
+    //cursor: pointer;
+    //&:hover {
+    //    opacity: 0.8;
+    //}
+//}
+
+// Anidación
+.profileCard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    .header {
+        font-size: 1.5em;
+        margin: 0.5rem 0rem;
+    }
+    .description {
+        color: #666;
+    }
+    .footer {
+        @include flex(row);
+        width: 100% !important;// Uso del mixin
+    }
+}

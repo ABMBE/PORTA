@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "@/styles/layout.module.scss";
-import Link from 'next/link';
+import Link from "next/link";
 import { hrtime } from "process";
 
 export default function Home() {
@@ -18,10 +18,8 @@ export default function Home() {
               <div>
                 <nav>
                   <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/app/proyects">Project</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><Link href="/project">Projects</Link></li>
+                    <li><Link href="/contact">Contact</Link></li>
                   </ul>
                 </nav>
               </div>
@@ -31,7 +29,6 @@ export default function Home() {
               <li><a href="https://linkedin.com/in/tu-usuario" target="_blank"></a></li> 
               <li><a href="https://codepen.io/tu-usuario" target="_blank"></a></li> 
               <li><a href="https://twitter.com/tu-usuario" target="_blank"></a></li> 
-              <li><a href="https://www.goodreads.com/tu-usuario" target="_blank"></a></li> 
             </ul>
           </header>
           <main className={styles.container}>
