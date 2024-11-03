@@ -5,17 +5,21 @@ import Link from "next/link";
 const Contact = () => {
     return (
         <div>
-            <div>
-            <nav>
-                <ul>
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="/project">Projects</Link></li>
-                </ul>
-                </nav>
+            <div className={styles.nav3}>
+                <div>
+                    <h1>CONTACT</h1>
+                    <nav>
+                        <ul>
+                            <li><Link href="/">Home</Link></li>
+                            <li><Link href="/project">Projects</Link></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
             <div>
-            <h1>Contacto</h1>
-            <h2>vamos a completar el contacto</h2>
+                <div>
+                    
+                </div>
             </div>
         </div>
     );

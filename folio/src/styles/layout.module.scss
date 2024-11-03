@@ -9,17 +9,21 @@
     margin: 0;
     padding: 50px;  
     font-family: var(--primary-font);
+    //background-image: url('/images/fondo.jpeg');
+    overflow: hidden;
+    background-size: cover;
+    height: 100vh;
+    cursor: crosshair;
 }
 
 .head {
     @include flex(row);
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 50px;
     width: 50%; 
-    height: 100vh;
     font-weight: lighter;
-    //background-color: black;
+    background-color: #0B162F;
     
     h1{
         font-size: $font-size-h1;
@@ -31,37 +35,28 @@
     }
 }
 
-.first{
+.first {
     @include flex (column);
-    gap: 4rem;
+    gap: 40px;
+}
+.first nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
 
-    h2{
-        font-size: $font-size-h3;
-    }
-    p {
-        font-size: $font-size-small;
-    }
-    nav ul{
-        list-style: none;
-        padding: 0;
-        display: flex;
-        gap:20px
-    }
-
-    nav ul li{
-        text-decoration: none;
-        color: $fontcolor1;
-        position: relative;
-        
-    }
+.first nav ul li {
+    @include nav-link-animation;
 }
 
 .container {
-    @include flex (row);
+    @include flex (column);
     align-items: center;
     justify-content: center;
     width: 50%;
     padding: 30px;
+    background-color:#0A1328    ;
 
     section div {
         @include flex (column);
@@ -73,16 +68,21 @@
         }
 }
 
-.nav2 {
+.nav2, .nav3 {
     @include flex (row);
     justify-content: center;
 
     h1 {
         font-size: $font-size-h1;
+        font-weight: bold;
     }
     nav ul{
         @include flex (row);
         justify-content: space-around;
+    }
+
+    nav ul li{
+        @include nav-link-animation;
     }
     
 }

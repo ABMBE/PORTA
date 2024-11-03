@@ -3,9 +3,35 @@
     flex-direction: $direction;
 }
 
-//@mixin gripcontainer {
-//    display: grid;
-//  grid-template-columns: auto auto;
-//  grid-template-rows: 1fr;
-// gap: 1rem;
-//}
+@mixin nav-link-animation {
+    position: relative;
+    padding: 10px 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #64ffda; /* Color del subrayado */
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+        visibility: visible;
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ccd6f6;
+        font-size: 1.2em;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: #64ffda; /* Color del texto al pasar el cursor */
+        }
+    }
+}
