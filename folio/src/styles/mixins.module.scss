@@ -1,3 +1,5 @@
+@import "../styles/variables.scss";
+
 @mixin flex ($direction){
     display: flex;
     flex-direction: $direction;
@@ -14,7 +16,7 @@
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #64ffda; /* Color del subrayado */
+        background-color: $hovercolor; /* Color del subrayado */
         visibility: hidden;
         transition: all 0.3s ease-in-out;
     }
@@ -31,7 +33,7 @@
         transition: color 0.3s ease-in-out;
 
         &:hover {
-            color: #64ffda; /* Color del texto al pasar el cursor */
+            color: $hovercolor; /* Color del texto al pasar el cursor */
         }
     }
 }
