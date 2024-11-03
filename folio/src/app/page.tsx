@@ -18,8 +18,8 @@ export default function Home() {
               <div>
                 <nav>
                   <ul>
-                    <li><Link href="/project">Projects</Link></li>
-                    <li><Link href="/contact">Contact</Link></li>
+                    <li><Link href="/project">PROJECTS</Link></li>
+                    <li><Link href="/contact">CONTACT</Link></li>
                   </ul>
                 </nav>
               </div>

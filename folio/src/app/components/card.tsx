@@ -1,21 +1,11 @@
 import styles from "@/styles/card.module.scss";
-const Card = ({ name, description }: any) => {
+const Card = ({ name, description, photo}: any) => {
     return (
         <div className={styles.profileCard}>
         <div className={styles.header}>{name}</div>
-        <div className={styles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-            quis sem at nibh elementum imper Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
-            dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imper Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-            Praesent libero.
+        <div className={styles.description}>{description}</div>
+        <img src={photo} alt={`${name}'s photo`} className={styles.photo} />
         </div>
-            <div className={styles.footer}>
-            <button className={styles.button}>See more ...</button>
-        </div>
-    </div>
     );
 };
 

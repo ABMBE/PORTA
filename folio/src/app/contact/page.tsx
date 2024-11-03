@@ -15,9 +15,6 @@ const Contact = () => {
             </div>
             <div>
             <h1>Contacto</h1>
-            <div className={styles.card}>
-                <Card name="Cableado estruturado"></Card>
-            </div>
             <h2>vamos a completar el contacto</h2>
             </div>
         </div>

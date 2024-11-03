@@ -1,33 +1,40 @@
 @import "../styles/mixins.module.scss";
+@import "../styles/variables.scss";
 
-// Variables
-$primary-color: #02070a;
-$border-radius: 8px;
-// Mixins
-//@mixin button-style($bg-color) {
-    //background-color: $bg-color;
-    //color: #fff;
-    //padding: 10px 20px;
-    //margin: 1.5rem 0rem;
-    //border: none;
-    //cursor: pointer;
-    //&:hover {
-    //    opacity: 0.8;
-    //}
-//}
 
 // Anidación
 .profileCard {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    @include flex (column);
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    background-color: var(--background);
+    border: 1px solid #ffffff;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
     .header {
-        font-size: 1.5em;
+        font-size: $font-size-h2;
+        font-weight: bold;
         margin: 0.5rem 0rem;
+        color: $fontcolor1;
     }
     .description {
-        color: #666;
+        color: $fontcolor2;
+        text-align: justify;
+        padding: 15px;
+    }
+    .photo {
+        width: 500px; 
+        height: 250px;
+        padding: 2px;
+
+        border-radius: 4%; 
+        box-shadow: 0 4px 8px rgb(255, 255, 255); /* Sombra para profundidad */ 
+        transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    }
+    .photo:hover { 
+        transform: scale(1.1); /* Ampliar ligeramente en hover */ 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa en hover */
     }
     .footer {
         @include flex(row);
