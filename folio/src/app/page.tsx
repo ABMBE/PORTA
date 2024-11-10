@@ -1,7 +1,7 @@
-import Image from "next/image";
+//import Image from "next/image";
 import styles from "@/styles/layout.module.scss";
 import Link from "next/link";
-import { hrtime } from "process";
+//import { hrtime } from "process";
 
 export default function Home() {
   return (

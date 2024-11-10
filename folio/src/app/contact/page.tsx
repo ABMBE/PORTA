@@ -1,8 +1,6 @@
 import styles from "@/styles/layout.module.scss";
-import Card from "@/app/components/card";
 import Link from "next/link";
-import React, { useState } from 'react'; 
-import estilos from './contact.module.scss';
+//import React, { useState } from 'react';
 
 const Contact = () => {
     return (
@@ -20,4 +18,6 @@ const Contact = () => {
             </div>
             </div>
     );
-    }
+}
+
+export default Contact;
